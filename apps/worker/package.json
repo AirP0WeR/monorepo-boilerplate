@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "start": "node dist/index.js",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@example/logger": "workspace:*",
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "@example/typescript-config": "workspace:*",
+    "@types/express": "4.17.17",
+    "dotenv": "16.0.3",
+    "tsup": "6.6.3",
+    "tsx": "^4.7.0",
+    "typescript": "4.9.4"
+  },
+  "keywords": [],
+  "author": "airp0wer",
+  "license": "MIT"
+}
