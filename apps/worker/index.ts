@@ -1,5 +1,5 @@
 import express from "express";
-import logger from "@example/logger";
+import logger from "@brosco/logger";
 
 const app = express();
 

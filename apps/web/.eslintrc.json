@@ -1,0 +1,3 @@
+{
+  "extends": "@brosco/eslint-config-custom/library.json"
+}

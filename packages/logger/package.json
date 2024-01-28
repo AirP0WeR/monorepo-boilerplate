@@ -1,5 +1,5 @@
 {
-  "name": "@example/logger",
+  "name": "@brosco/logger",
   "main": "./index.ts",
   "types": "./index.ts",
   "source": "./index.ts",
@@ -11,7 +11,8 @@
     "pino": "8.10.0"
   },
   "devDependencies": {
-    "@example/typescript-config": "workspace:*",
+    "@brosco/eslint-config-custom": "workspace:*",
+    "@brosco/typescript-config": "workspace:*",
     "@types/node": "^20.11.8",
     "pino-pretty": "9.2.0"
   }

@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/stylistic",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": ["apps/web/tsconfig.json", "apps/calculator/tsconfig.json"]
+      }
+    }
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "root": true,
+  "ignorePatterns": ["__tests__/**/*"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-duplicate-imports": "warn",
+    "sort-keys": [
+      "off",
+      "asc",
+      { "caseSensitive": true, "natural": false, "minKeys": 2 }
+    ],
+    "sort-imports": [
+      "off",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": false
+      }
+    ]
+  }
+}
