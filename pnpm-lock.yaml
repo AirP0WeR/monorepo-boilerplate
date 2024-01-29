@@ -9,17 +9,20 @@ importers:
   .:
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
-        specifier: ^4.1.1
+        specifier: 4.1.1
         version: 4.1.1(prettier@3.2.4)
       husky:
-        specifier: ^9.0.6
-        version: 9.0.6
+        specifier: 8.0.0
+        version: 8.0.0
       prettier-plugin-tailwindcss:
         specifier: ^0.5.11
         version: 0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier@3.2.4)
       turbo:
         specifier: 1.11.3
         version: 1.11.3
+      typescript:
+        specifier: 5.3.3
+        version: 5.3.3
 
   apps/web:
     dependencies:
@@ -27,42 +30,39 @@ importers:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
       react:
-        specifier: ^18
+        specifier: 18.2.0
         version: 18.2.0
       react-dom:
-        specifier: ^18
+        specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@brosco/eslint-config-custom':
         specifier: workspace:*
         version: link:../../packages/eslint-config
       '@types/node':
-        specifier: ^20
+        specifier: 20.11.8
         version: 20.11.8
       '@types/react':
-        specifier: ^18
+        specifier: 18.2.48
         version: 18.2.48
       '@types/react-dom':
-        specifier: ^18
+        specifier: 18.2.18
         version: 18.2.18
       autoprefixer:
-        specifier: ^10.0.1
+        specifier: 10.4.17
         version: 10.4.17(postcss@8.4.33)
       eslint:
-        specifier: ^8
+        specifier: 8.56.0
         version: 8.56.0
       eslint-config-next:
         specifier: 14.1.0
         version: 14.1.0(eslint@8.56.0)(typescript@5.3.3)
       postcss:
-        specifier: ^8
+        specifier: 8.4.33
         version: 8.4.33
       tailwindcss:
         specifier: ^3.3.0
         version: 3.4.1
-      typescript:
-        specifier: 5.3.3
-        version: 5.3.3
 
   apps/worker:
     dependencies:
@@ -88,9 +88,6 @@ importers:
       tsx:
         specifier: 4.7.0
         version: 4.7.0
-      typescript:
-        specifier: 5.3.3
-        version: 5.3.3
 
   packages/eslint-config:
     devDependencies:
@@ -2884,9 +2881,9 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky@9.0.6:
-    resolution: {integrity: sha512-EEuw/rfTiMjOfuL7pGO/i9otg1u36TXxqjIA6D9qxVjd/UXoDOsLor/BSFf5hTK50shwzCU3aVVwdXDp/lp7RA==}
-    engines: {node: '>=18'}
+  /husky@8.0.0:
+    resolution: {integrity: sha512-4qbE/5dzNDNxFEkX9MNRPKl5+omTXQzdILCUWiqG/lWIAioiM5vln265/l6I2Zx8gpW8l1ukZwGQeCFbBZ6+6w==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
