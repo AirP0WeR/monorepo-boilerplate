@@ -47,3 +47,11 @@ Run to clean all project
 ```bash
 bun clean
 ```
+
+Run to typecheck all project
+
+```bash
+bun typecheck
+```
+
+
