@@ -1,3 +1,3 @@
-import { createBroscoLogger } from "@brosco/logger";
+import { createBroscoLogger } from "@package/logger";
 
 export const loggerWorker = createBroscoLogger("worker");

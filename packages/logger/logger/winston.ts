@@ -25,10 +25,6 @@ export function createBroscoLogger(loggerLabel: string) {
       }),
     ],
   });
-
-  logger.debug(`NODE_ENV: ${process.env.NODE_ENV}`);
-  logger.debug(`LOG_LEVEL: ${process.env.LOG_LEVEL}`);
-
   return logger;
 }
 

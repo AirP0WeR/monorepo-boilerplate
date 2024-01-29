@@ -2,6 +2,9 @@ import express from "express";
 
 import { loggerWorker } from "./src/logger";
 
+loggerWorker.debug(`NODE_ENV: ${process.env.NODE_ENV}`);
+loggerWorker.debug(`LOG_LEVEL: ${process.env.LOG_LEVEL}`);
+
 const app = express();
 
 app.get("/", (req, res) => {

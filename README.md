@@ -7,9 +7,9 @@ doenv
 turbo
 prettier + sort config
 logger
+hasky- ok
 
-jest
-hasky
+
 web- nextjs
 worker - ?
 
