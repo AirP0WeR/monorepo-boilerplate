@@ -9,21 +9,11 @@
     "plugin:import/typescript",
     "prettier"
   ],
-  "settings": {
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true,
-        "project": ["apps/web/tsconfig.json", "apps/calculator/tsconfig.json"]
-      }
-    }
-  },
-  "ignorePatterns": ["./dist/**", "./build/**", ".next/**"],
 
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "root": true,
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "prettier/prettier": "warn",
