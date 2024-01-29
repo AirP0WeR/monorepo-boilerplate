@@ -1,8 +1,9 @@
 pnpm - ок
 tsconfig
-turbo
 lint
-prettier
+doenv
+turbo
+prettier + sort config
 logger
 
 jest

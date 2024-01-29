@@ -1,5 +1,5 @@
-import express from "express";
 import { createBroscoLogger } from "@brosco/logger";
+import express from "express";
 
 export const loggerWeb = createBroscoLogger("web");
 
