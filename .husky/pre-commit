@@ -1,2 +1,2 @@
-pnpm lint
-pnpm typecheck
+bun lint
+bun typecheck
