@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "lint": "eslint . --quiet"
+    "lint": "eslint . --quiet",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm *.tsbuildinfo"
   },
   "main": "./index.ts",
   "exports": {

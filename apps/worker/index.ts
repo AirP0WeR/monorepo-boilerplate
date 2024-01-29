@@ -1,16 +1,16 @@
-import { createBroscoLogger } from "@brosco/logger";
 import express from "express";
 
-export const loggerWeb = createBroscoLogger("web");
+import { loggerWorker } from "./src/logger";
 
 const app = express();
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-
-const PORT = process.env.PORT || 9999;
+const PORT = process.env.WORKER_PORT || 9999;
+const NODE_ENV = process.env.NODE_ENV || "none";
 
 app.listen(PORT, () => {
-  loggerWeb.info(`Example app listening on port ${PORT}`);
+  loggerWorker.info(`Example app listening on port ${PORT}`);
+  loggerWorker.info(`Example app listening on port ${NODE_ENV}`);
 });

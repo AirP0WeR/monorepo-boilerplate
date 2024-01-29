@@ -1,6 +1,8 @@
 pnpm - ок
-tsconfig
-lint
+tsconfig - ok
+lint - ok
+"typecheck": "tsc --noEmit"
+
 doenv
 turbo
 prettier + sort config

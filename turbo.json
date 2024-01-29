@@ -1,13 +1,14 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalDotEnv": [".env"],
 
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**", "dist/**"]
+      "outputs": [".next/**", "dist/**"],
+      "dependsOn": ["^build"]
     },
     "start": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["typecheck", "build"],
       "cache": false
     },
     "dev": {
@@ -20,6 +21,7 @@
       "outputs": []
     },
     "typecheck": {
+      "dependsOn": ["^typecheck"],
       "outputs": ["tsconfig.tsbuildinfo"]
     }
   }
