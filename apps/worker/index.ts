@@ -7,7 +7,7 @@ loggerWorker.debug(`LOG_LEVEL: ${process.env.LOG_LEVEL}`);
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
   res.send("Hello World!");
 });
 const PORT = process.env.WORKER_PORT || 9999;
