@@ -1,6 +1,6 @@
-# Turborepo Next.js 14 Express Winston PNPM Prettier Husky TypeCheck ESLint boilerplate
+# Turborepo Next.js 14 Express Winston BUN Prettier Husky TypeCheck ESLint boilerplate
 
-This is an example setup for a full-stack monorepo using [Turborepo](https://turborepo.com) with [Next.js](https://nextjs.org/) and [Express](https://expressjs.com/) [PNPM](https://pnpm.io/). Most other Turborepo examples I've seen using Express or other plain TS Apps take a different approach to bundling shared packages.
+This is an example setup for a full-stack monorepo using [Turborepo](https://turborepo.com) with [Next.js](https://nextjs.org/) and [Express](https://expressjs.com/) compiled with [BUN](https://bun.sh/). Most other Turborepo examples I've seen using Express or other plain TS Apps take a different approach to bundling shared packages.
 
 Most examples like [Turbo kitchen-sink example](https://github.com/vercel/turbo/blob/main/examples/kitchen-sink/packages/logger/package.json) will have `dev` and `build` scripts for each shared package, which then watch the package for any changes and rebuild on each change.
 
@@ -8,35 +8,11 @@ I wanted to to find a way to avoid having a `dev` and `build` step for each pack
 
 With Next.js 14 we have no problems with Transpile packages, it goes on fly with Next compiler.
 
-Doing this with Express however was not as straight-forward, but you can get it working with a pretty simple setup using [tsup](https://github.com/egoist/tsup)
-
-Building an app using `tsup` with the following config will automatically transpile and bundle local shared packages during the `build` step
-
-```ts
-// tsup.config.ts
-
-import { defineConfig } from "tsup";
-
-export default defineConfig({
-  entry: ["./index.ts"],
-  noExternal: ["@package"],
-  splitting: false,
-  bundle: true,
-  outDir: "./dist",
-  clean: true,
-  env: { IS_SERVER_BUILD: "true" },
-  loader: { ".json": "copy" },
-  minify: true,
-  sourcemap: true,
-});
+Doing this with Express however was not as straight-forward, but you can get it working with a pretty simple setup using [BUN](https://bun.sh/).
 ```
-
-The magic here is `noExternal: ['@package']`
-
-This one setting allows you to bundle any external shared packages matching `@package` **and** their dependencies into the app's build output.
-
-Example: shared packages named `@package/logger` will be bundled into the app's build output, along with their dependencies.
-Thanks to [Riley-Brown](https://github.com/Riley-Brown)
+    bun build --target=bun ./index.ts --outfile ./dist/index.js
+```
+you can use ```--target=node``` if you will use node to run compiled app.
 
 ## Try it out yourself:
 
@@ -45,40 +21,37 @@ Turborepo will run these commands for all packages and apps from the root direct
 Install all dependencies for all packages and apps
 
 ```bash
-pnpm i
+bun i
 ```
 
 Start dev env for both server and front-end
 
 ```bash
-pnpm dev
+bun dev
 ```
 
 Build both server and front-end apps
 
 ```bash
-pnpm build
+bun run build
 ```
 
 Run both server and front-end apps
 
 ```bash
-pnpm start
+bun start
 ```
 
 Run to clean all project
 
 ```bash
-pnpm clean
+bun clean
 ```
 
 Run to typecheck all project
 
 ```bash
-pnpm typecheck
+bun typecheck
 ```
 
-## Also try it with [Bun](bun.sh) on bun branch:
-```bash
-bun i
-```
+
