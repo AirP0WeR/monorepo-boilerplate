@@ -1,19 +1,3 @@
-pnpm - ок
-tsconfig - ok
-lint - ok
-"typecheck": "tsc --noEmit"
-
-doenv
-turbo
-prettier + sort config
-logger
-hasky- ok
-
-web- nextjs
-worker - ?
-
-packages
-
 # Turborepo Next.js 14 Express Winston PNPM Prettier Husky TypeCheck ESLint boilerplate
 
 This is an example setup for a full-stack monorepo using [Turborepo](https://turborepo.com) with [Next.js](https://nextjs.org/) and [Express](https://expressjs.com/) [PNPM](https://pnpm.io/). Most other Turborepo examples I've seen using Express or other plain TS Apps take a different approach to bundling shared packages.
