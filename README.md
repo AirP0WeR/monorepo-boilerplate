@@ -77,3 +77,8 @@ Run to typecheck all project
 ```bash
 pnpm typecheck
 ```
+
+# Also try it with [Bun](bun.sh) on bun branch:
+```bash
+bun i
+```
