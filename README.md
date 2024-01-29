@@ -1,6 +1,6 @@
 # Turborepo Next.js 14 Express Winston BUN Prettier Husky TypeCheck ESLint boilerplate
 
-This is an example setup for a full-stack monorepo using [Turborepo](https://turborepo.com) with [Next.js](https://nextjs.org/) and [Express](https://expressjs.com/) [BUN](https://bun.sh/). Most other Turborepo examples I've seen using Express or other plain TS Apps take a different approach to bundling shared packages.
+This is an example setup for a full-stack monorepo using [Turborepo](https://turborepo.com) with [Next.js](https://nextjs.org/) and [Express](https://expressjs.com/) compiled with [BUN](https://bun.sh/). Most other Turborepo examples I've seen using Express or other plain TS Apps take a different approach to bundling shared packages.
 
 Most examples like [Turbo kitchen-sink example](https://github.com/vercel/turbo/blob/main/examples/kitchen-sink/packages/logger/package.json) will have `dev` and `build` scripts for each shared package, which then watch the package for any changes and rebuild on each change.
 
@@ -11,7 +11,6 @@ With Next.js 14 we have no problems with Transpile packages, it goes on fly with
 Doing this with Express however was not as straight-forward, but you can get it working with a pretty simple setup using [BUN](https://bun.sh/).
 ```
     bun build --target=bun ./index.ts --outfile ./dist/index.js
-
 ```
 you can use ```--target=node``` if you will use node to run compiled app.
 
@@ -22,7 +21,7 @@ Turborepo will run these commands for all packages and apps from the root direct
 Install all dependencies for all packages and apps
 
 ```bash
-pnpm i
+bun i
 ```
 
 Start dev env for both server and front-end
