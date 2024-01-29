@@ -14,8 +14,8 @@
   "keywords": [],
   "license": "MIT",
   "scripts": {
-    "dev": "cp .env.development .env && FORCE_COLOR=1 dotenv -e .env -- turbo run dev --filter=web --filter=worker",
-    "build": "cp .env.production .env && dotenv -e .env -- turbo run build --filter=web --filter=worker --no-daemon",
+    "dev": "cp .env.development .env && FORCE_COLOR=1 dotenv -e .env -- turbo run dev --filter='./apps/*'",
+    "build": "cp .env.production .env && dotenv -e .env -- turbo run build --filter='./apps/*' --no-daemon",
     "start": "cp .env.production .env && dotenv -e .env -- turbo run start --no-daemon",
     "clean": "turbo run clean && rm -rf node_modules && rm -rf .turbo",
     "lint": "turbo run lint --no-daemon",

@@ -53,5 +53,3 @@ Run to typecheck all project
 ```bash
 bun typecheck
 ```
-
-
