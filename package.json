@@ -13,7 +13,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@brosco/typescript-config": "workspace:*",
     "turbo": "1.11.3"
   },
   "keywords": [],

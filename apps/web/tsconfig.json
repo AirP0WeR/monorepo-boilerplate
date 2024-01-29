@@ -1,18 +1,19 @@
 {
-  "extends": "@brosco/typescript-config/nextjs.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+    },
     "plugins": [
       {
-        "name": "next"
-      }
-    ]
+        "name": "next",
+      },
+    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
   },
-  "include": [
-    "next-env.d.ts",
-    "next.config.js",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
 }

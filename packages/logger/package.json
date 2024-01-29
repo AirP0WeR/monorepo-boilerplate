@@ -1,19 +1,19 @@
 {
   "name": "@brosco/logger",
-  "main": "./index.ts",
-  "types": "./index.ts",
-  "source": "./index.ts",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "clean": "rm -rf .turbo && rm -rf node_modules",
-    "lint": "eslint ."
+    "lint": "eslint . --quiet"
   },
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "type": "module",
   "dependencies": {
-    "pino": "8.10.0"
+    "winston": "3.11.0"
   },
   "devDependencies": {
-    "@brosco/eslint-config-custom": "workspace:*",
-    "@brosco/typescript-config": "workspace:*",
-    "@types/node": "^20.11.8",
-    "pino-pretty": "9.2.0"
+    "@brosco/eslint-config-custom": "workspace:*"
   }
 }

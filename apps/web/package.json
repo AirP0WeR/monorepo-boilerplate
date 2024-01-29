@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@brosco/eslint-config-custom": "workspace:*",
-    "@brosco/typescript-config": "workspace:*",
     "typescript": "5.3.3",
     "@types/node": "^20",
     "@types/react": "^18",
