@@ -46,3 +46,11 @@ Run to husky install
 ```bash
 bun husky install
 ```
+For install readable yarn.lock file
+```bash
+bun install -y
+```
+For install in production
+```bash
+bun install --frozen-lock 
+```
