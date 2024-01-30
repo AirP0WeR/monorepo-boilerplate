@@ -17,6 +17,6 @@ Bun.serve({
   },
 
   // Optional port number - the default value is 3000
-  port: process.env.SERVER_PORT || 3000,
+  port: process.env.WORKER_PORT || 3000,
 });
-loggerWorker.info(`Bun server starts at ${process.env.SERVER_PORT}`);
+loggerWorker.info(`Bun server starts at ${process.env.WORKER_PORT}`);

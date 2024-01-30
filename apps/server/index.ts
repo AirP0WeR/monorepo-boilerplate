@@ -8,7 +8,7 @@ app.get("/", (_req, res) => {
   loggerWorker.debug(`Req from express server`);
   res.send("Hello World!");
 });
-const PORT = process.env.WORKER_PORT || 9999;
+const PORT = process.env.SERVER_PORT || 9999;
 
 app.listen(PORT, () => {
   loggerWorker.debug(`NODE_ENV: ${process.env.NODE_ENV}`);
