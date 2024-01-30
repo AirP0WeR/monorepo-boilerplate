@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "bun --watch index.ts",
     "start": "bun dist/index.js",
-    "build": "bun build --target=bun ./index.ts --outfile ./dist/index.js",
+    "build": "bun build --target=bun ./index.ts --outfile ./dist/index.js --minify",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist rm -f *.tsbuildinfo"
