@@ -9,48 +9,67 @@ I wanted to to find a way to avoid having a `dev` and `build` step for each pack
 With Next.js 14 we have no problems with Transpile packages, it goes on fly with Next compiler.
 
 Doing this with Express however was not as straight-forward, but you can get it working with a pretty simple setup using [BUN](https://bun.sh/).
+
 ```
     bun build --target=bun ./index.ts --outfile ./dist/index.js
 ```
-you can use ```--target=node``` if you will use node to run compiled app.
+
+you can use `--target=node` if you will use node to run compiled app.
 
 ## Try it out yourself:
 
 Turborepo will run these commands for all packages and apps from the root directory
 
 Install all dependencies for all packages and apps
+
 ```bash
 bun i
 ```
+
 Start dev env for both server and front-end
+
 ```bash
 bun dev
 ```
+
 Build both server and front-end apps
+
 ```bash
 bun run build
 ```
+
 Run both server and front-end apps
+
 ```bash
 bun start
 ```
+
 Run to clean all project
+
 ```bash
 bun clean
 ```
+
 Run to typecheck all project
+
 ```bash
 bun typecheck
 ```
+
 Run to husky install
+
 ```bash
-bun husky install
+bun prepare
 ```
+
 For install readable yarn.lock file
+
 ```bash
 bun install -y
 ```
+
 For install in production
+
 ```bash
-bun install --frozen-lock 
+bun install --frozen-lock
 ```

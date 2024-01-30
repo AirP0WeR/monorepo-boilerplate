@@ -5,7 +5,6 @@ const loggerWorker = createBroscoLogger("bun worker");
 Bun.serve({
   fetch(req: Request): Response | Promise<Response> {
     const url = new URL(req.url);
-
     if (url.pathname === "/") {
       loggerWorker.info("Home page!");
       return new Response("Home page!");
