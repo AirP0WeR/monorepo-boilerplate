@@ -19,37 +19,30 @@ you can use ```--target=node``` if you will use node to run compiled app.
 Turborepo will run these commands for all packages and apps from the root directory
 
 Install all dependencies for all packages and apps
-
 ```bash
 bun i
 ```
-
 Start dev env for both server and front-end
-
 ```bash
 bun dev
 ```
-
 Build both server and front-end apps
-
 ```bash
 bun run build
 ```
-
 Run both server and front-end apps
-
 ```bash
 bun start
 ```
-
 Run to clean all project
-
 ```bash
 bun clean
 ```
-
 Run to typecheck all project
-
 ```bash
 bun typecheck
+```
+Run to husky install
+```bash
+bun husky install
 ```
