@@ -1,10 +1,5 @@
 {
-  "branches": [
-    "main",
-    "pnpm",
-    { "name": "beta", "prerelease": true },
-    { "name": "alpha", "prerelease": true }
-  ],
+  "branches": ["main", "pnpm"],
   "ci": false,
   "plugins": [
     [
