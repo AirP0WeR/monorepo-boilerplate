@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.12...v1.1.0) (2024-02-08)
+
+
+### feat
+
+* user role name ([b12db66](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/b12db66b9eaf694aae60ba897aa1195fa9a2b522))
+* user role name ([d7ed766](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/d7ed766c2609f1c653151c2c58e9ab483f5938f7))
+
 ## [1.0.12](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.11...v1.0.12) (2024-02-08)
 
 
