@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.4...v1.0.5) (2024-02-08)
+
+
+### fix
+
+* pnpm i ([f81a2a2](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/f81a2a2e16a43bb98f674ded5046085d0ad9a7ca))
+
 ## [1.0.4](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.3...v1.0.4) (2024-02-08)
 
 
