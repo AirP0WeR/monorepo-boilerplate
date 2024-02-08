@@ -1,5 +1,5 @@
 {
-  "branches": ["main", "master", { "name": "pnpm", "prerelease": false }],
+  "branches": ["main", "master", "pnpm"],
   "ci": false,
   "plugins": [
     [
@@ -26,7 +26,14 @@
         "preset": "ESLint"
       }
     ],
-    ["@semantic-release/github"],
+    [
+      "@semantic-release/github",
+      {
+        "successComment": "This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version} :tada:",
+        "labels": true,
+        "releasedLabels": true
+      }
+    ],
     [
       "@semantic-release/changelog",
       {
