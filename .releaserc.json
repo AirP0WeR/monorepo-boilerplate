@@ -29,7 +29,10 @@
     [
       "@semantic-release/github",
       {
-        "successComment": "This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version} :tada:"
+        "successComment": "This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version} :tada:",
+        "labels": true,
+        "releasedLabels": true,
+        "draftRelease": false
       }
     ],
     [
