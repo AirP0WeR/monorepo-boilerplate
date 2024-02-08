@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.3...v1.0.4) (2024-02-08)
+
+
+### fix
+
+* -husky ([cfcb8c5](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/cfcb8c566ae25fcfb6fdee5638429c7257f9a448))
+
 ## [1.0.3](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.2...v1.0.3) (2024-02-08)
 
 
