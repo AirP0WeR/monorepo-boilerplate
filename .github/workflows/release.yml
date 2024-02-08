@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+      - pnpm
+    # paths:
+    #   - "./apps/**"
+    #   - "./packages/**"
+    #   - ".github/workflows/release.yml"
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    # Skip running release workflow on forks
+    if: github.repository_owner == 'airp0wer'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          semantic_version: 23
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+            conventional-changelog-conventionalcommits
+            conventional-changelog-eslint
+        env:
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
