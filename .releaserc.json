@@ -1,5 +1,5 @@
 {
-  "branches": ["main", "master"],
+  "branches": ["main", "master", "pnpm"],
   "ci": false,
   "plugins": [
     [
