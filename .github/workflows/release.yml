@@ -8,8 +8,6 @@ on:
       - master
       - pnpm
     # paths:
-    #   # - '**/*.tpl'
-    #   # - '**/*.tf'
     #   - "./apps/**"
     #   - "./packages/**"
     #   - ".github/workflows/release.yml"
@@ -22,19 +20,19 @@ jobs:
     if: github.repository_owner == 'airp0wer'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
           fetch-depth: 0
 
       - name: Release
-        uses: cycjimmy/semantic-release-action@v3.1.1
+        uses: cycjimmy/semantic-release-action@v4
         with:
-          semantic_version: 18
+          semantic_version: 23
           extra_plugins: |
-            @semantic-release/changelog@6.0.1
-            @semantic-release/git@10.0.1
-            conventional-changelog-conventionalcommits@5.0.0
-            conventional-changelog-eslint@3.0.9
+            @semantic-release/changelog
+            @semantic-release/git
+            conventional-changelog-conventionalcommits
+            conventional-changelog-eslint
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
