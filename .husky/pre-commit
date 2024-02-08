@@ -1,0 +1,5 @@
+if git status --porcelain | grep -Po 'apps\/.+?\/|packages\/.+?\/' &> /dev/null
+  then 
+    pnpm lint typecheck 
+fi
+
