@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.6...v1.0.7) (2024-02-08)
+
+
+### fix
+
+* readme ([7aef560](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/7aef560aa71c289c8f4d67146fabf7e8fb1f3f3c))
+
 ## [1.0.6](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.5...v1.0.6) (2024-02-08)
 
 
