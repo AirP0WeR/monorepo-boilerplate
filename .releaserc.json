@@ -1,6 +1,5 @@
 {
   "branches": ["main", "pnpm"],
-  "ci": false,
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
