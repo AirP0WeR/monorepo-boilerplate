@@ -32,9 +32,9 @@ jobs:
         with:
           semantic_version: 23
           extra_plugins: |
-            @semantic-release/changelog@6.0.1
-            @semantic-release/git@10.0.1
-            conventional-changelog-conventionalcommits@5.0.0
-            conventional-changelog-eslint@3.0.9
+            @semantic-release/changelog
+            @semantic-release/git
+            conventional-changelog-conventionalcommits
+            conventional-changelog-eslint
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
