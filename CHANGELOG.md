@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.0...v1.0.1) (2024-02-08)
+
+
+### fix
+
+* pre ([49148a6](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/49148a65299295d8bcbd710d99c9e13c4a3dc382))
+
 # 1.0.0 (2024-02-08)
 
 
