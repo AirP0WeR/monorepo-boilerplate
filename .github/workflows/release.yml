@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - master
+      - pnpm
     paths:
       # - '**/*.tpl'
       # - '**/*.tf'
