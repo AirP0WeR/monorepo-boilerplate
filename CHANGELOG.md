@@ -1,3 +1,21 @@
+## [1.0.11](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.10...v1.0.11) (2024-02-08)
+
+
+### fix
+
+* test 3 ([1aa3ccf](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/1aa3ccf657ddcaacfe23672eae27d3ee8bfd87e9))
+
+## [1.0.10](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.9...v1.0.10) (2024-02-08)
+
+
+### chore
+
+* sadfasdfsadfsdaf3sadfsdaf ([6bedad0](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/6bedad09f737ddb5826ffaa55ecdb1b749659d21))
+
+### fix
+
+* sadfasdfsadfsdaf3sadfsdaf ([a18467a](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/a18467ac43eba477c95877d941807325f9d07244))
+
 ## [1.0.9](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.8...v1.0.9) (2024-02-08)
 
 
