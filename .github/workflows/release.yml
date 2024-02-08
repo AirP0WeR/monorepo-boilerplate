@@ -10,7 +10,9 @@ on:
     paths:
       # - '**/*.tpl'
       # - '**/*.tf'
-      - '.github/workflows/release.yml'
+      - "apps"
+      - "packages"
+      - ".github/workflows/release.yml"
 
 jobs:
   release:
