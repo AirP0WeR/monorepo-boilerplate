@@ -7,12 +7,12 @@ on:
       - main
       - master
       - pnpm
-    paths:
-      # - '**/*.tpl'
-      # - '**/*.tf'
-      - "./apps/**"
-      - "./packages/**"
-      - ".github/workflows/release.yml"
+    # paths:
+    #   # - '**/*.tpl'
+    #   # - '**/*.tf'
+    #   - "./apps/**"
+    #   - "./packages/**"
+    #   - ".github/workflows/release.yml"
 
 jobs:
   release:
