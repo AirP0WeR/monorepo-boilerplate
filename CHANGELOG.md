@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.2...v1.0.3) (2024-02-08)
+
+
+### fix
+
+* lock file ([824bd23](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/commit/824bd23fbeb18bee47eb0f6a96de911556a8a096))
+
 ## [1.0.2](https://github.com/AirP0WeR/monorepo-nextjs-express-bun-boilerplate/compare/v1.0.1...v1.0.2) (2024-02-08)
 
 
