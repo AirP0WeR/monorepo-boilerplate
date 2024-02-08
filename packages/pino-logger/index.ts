@@ -1,4 +1,4 @@
-import pino, { type LoggerOptions } from "pino";
+import { pino, type LoggerOptions } from "pino";
 
 const localDevConfig: LoggerOptions["transport"] = {
   target: "pino-pretty",
